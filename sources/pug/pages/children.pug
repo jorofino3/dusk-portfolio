@@ -1,0 +1,47 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Children'
+
+block page
+	include ../sections/_header-classic
+	
+	section.section.section-fullpage.section-md.bg-gray-100 
+		h6.section-fullpage-title Children
+		.section-fullpage-inner
+			.container.text-center
+				.row.justify-content-center
+					.col-12.col-xl-9.col-xxl-12
+						.row.row-15.row-md-30.gutters-10.gutters-md-30( data-lightgallery='group' )
+							.col-6.col-lg-4
+								.tilter
+									a.figure-classic( href='images/children-1-820x598.jpg' data-lightgallery='item' )
+										+img( 'children-1-400x292' )
+							.col-6.col-lg-4
+								.tilter
+									a.figure-classic( href='images/children-2-820x598.jpg' data-lightgallery='item' )
+										+img( 'children-2-400x292' )
+										
+							.col-6.col-lg-4
+								.tilter
+									a.figure-classic( href='images/children-3-820x598.jpg' data-lightgallery='item' )
+										+img( 'children-3-400x292' )
+										
+							.col-6.col-lg-4
+								.tilter
+									a.figure-classic( href='images/children-4-820x598.jpg' data-lightgallery='item' )
+										+img( 'children-4-400x292' )
+										
+							.col-6.col-lg-4
+								.tilter
+									a.figure-classic( href='images/children-5-820x598.jpg' data-lightgallery='item' )
+										+img( 'children-5-400x292' )
+										
+							.col-6.col-lg-4
+								.tilter
+									a.figure-classic( href='images/children-6-820x598.jpg' data-lightgallery='item' )
+										+img( 'children-6-400x292' )
+										
+	
+
+	include ../sections/_footer-classic

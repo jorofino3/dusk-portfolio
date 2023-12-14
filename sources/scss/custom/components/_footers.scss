@@ -1,0 +1,51 @@
+/** @section Footers */
+
+// Footer Classic
+.footer-classic {
+  @include media-breakpoint-up(xl) {
+    padding: 30px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+  font-family: $font-family-sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgba($gray-100, 0) 0%,
+    rgba($gray-100, 1) 70%
+  );
+  z-index: 1;
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  * + p.rights {
+    margin-top: 8px;
+  }
+
+  &.footer-classic-2 {
+    @include media-breakpoint-up(xl) {
+      position: relative;
+    }
+  }
+}
+
+.footer-classic-icon-list {
+  font-size: 18px;
+
+  a {
+    color: $gray-500;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $gray-400;
+    }
+  }
+}

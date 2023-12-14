@@ -1,0 +1,56 @@
+/** @section Links */
+
+// Standard link style
+a {
+  transition: $transition-base;
+
+  &,
+  &:focus,
+  &:active,
+  &:hover {
+    text-decoration: $link-decoration;
+  }
+
+  @include link($link-color, $link-hover-color);
+
+  &[href*="tel"],
+  &[href*="mailto"] {
+    white-space: nowrap;
+  }
+}
+
+.link-hover {
+  color: $link-hover-color;
+}
+
+.link-press {
+  color: $link-press-color;
+}
+
+.privacy-link {
+  display: inline-block;
+}
+
+* + .privacy-link {
+  margin-top: 25px;
+}
+
+.mail-link {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 38px;
+  color: $gray-500;
+  border-bottom: 2px solid $gray-500;
+
+  &:hover {
+    color: $gray-400;
+    border-bottom: 2px solid $gray-400;
+  }
+}
+
+* + .mail-link {
+  margin-top: 30px;
+  @include media-breakpoint-up(lg) {
+    margin-top: 60px;
+  }
+}

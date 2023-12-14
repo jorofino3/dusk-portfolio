@@ -1,0 +1,265 @@
+// Parallax-js
+// ----------------------
+
+.parallax-scene {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+
+    .layer {
+      position: relative !important;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  * + .parallax-scene {
+    margin-top: 30px;
+  }
+}
+.parallax-scene-item {
+  @include media-breakpoint-down(md) {
+    display: inline-block;
+    padding: 0 15px;
+    img {
+      max-width: 100%;
+    }
+
+    & + .parallax-scene-item {
+      margin-top: 15px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    margin-top: 0;
+    z-index: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.parallax-scene-item-1 {
+  width: 80%;
+  top: 50%;
+  left: 20%;
+
+  @include media-breakpoint-up(md) {
+    width: 60%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 55%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 500px;
+    left: 30%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    width: auto;
+  }
+}
+
+.parallax-scene-item-2 {
+  position: absolute;
+  width: 70%;
+  left: -10px;
+  bottom: 0;
+
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: auto;
+    top: 75%;
+    left: 25%;
+    bottom: auto;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 300px;
+    top: 65%;
+    left: 20%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    width: auto;
+    left: 25%;
+  }
+}
+
+.parallax-scene-item-3 {
+  display: none;
+  top: 15%;
+  left: 10%;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
+.parallax-scene-item-4 {
+  display: none;
+  top: 15%;
+  left: 5%;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    left: 10%;
+  }
+}
+
+.parallax-scene-item-5 {
+  bottom: -1%;
+  right: -31%;
+
+  @include media-breakpoint-up(xl) {
+    bottom: -3%;
+    right: -20%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    right: -10%;
+    bottom: 0%;
+  }
+}
+
+.parallax-scene-item-6 {
+  display: none;
+  bottom: 4%;
+  right: -20%;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 300px;
+    bottom: 28%;
+    right: -12%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    width: auto;
+    right: -4%;
+  }
+}
+
+.parallax-scene-item-7 {
+  bottom: -5%;
+  left: 6%;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+    width: 300px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    bottom: 2%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    left: 8%;
+    width: auto;
+  }
+}
+
+.parallax-scene-item-8 {
+  display: none;
+  top: 38%;
+  right: -22%;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 300px;
+    top: 45%;
+    right: -2%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    width: auto;
+    top: 48%;
+    right: -3%;
+  }
+}
+
+.parallax-scene-item-9,
+.parallax-scene-item-11 {
+  display: none;
+  top: 20%;
+  right: -20%;
+
+  @include media-breakpoint-up(xxl) {
+    right: -10%;
+  }
+}
+
+.parallax-scene-item-9 {
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  @include media-breakpoint-up(xl) {
+    top: 32%;
+    right: -10%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    top: 28%;
+    right: -5%;
+  }
+}
+
+.parallax-scene-item-11 {
+  display: none;
+
+  @include media-breakpoint-up(xl) {
+    display: block;
+    top: 29%;
+    right: -17%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    right: -8%;
+  }
+}
+
+.parallax-scene-item-10 {
+  display: none;
+  bottom: -5%;
+  right: -20%;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    right: -1%;
+    bottom: 2%;
+  }
+}

@@ -1,0 +1,149 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Lila Dusk'
+
+block page
+	include ../sections/_header-classic
+	
+	#fullpage
+		section.section.section-fullpage.section-md.bg-gray-100.section-fullpage-lg.fp-auto-height-responsive#section-1( data-anchor='home' )
+			.section-fullpage-inner.section-fullpage-inner-mode.py-4
+				.container.text-center
+					.row.justify-content-lg-end
+						.col-lg-6
+							h3 Lila Dusk
+							h6 creative photography
+			.parallax-scene
+				.parallax-scene-item.parallax-scene-item-1: .layer( data-depth='.2' ): +img( 'home-1-689x503' ).tilter
+				.parallax-scene-item.parallax-scene-item-2: .layer( data-depth='-.2' ): +img( 'home-2-400x292' ).tilter
+				.parallax-scene-item.parallax-scene-item-3: .layer( data-depth='-.36' ): +img( 'home-3-160x117' ).tilter
+						
+		section.section.section-fullpage.section-md.bg-gray-100.fp-auto-height-responsive#section-2( data-anchor='works' )
+			h6.section-fullpage-title works
+			.section-fullpage-inner
+				.container.text-center
+					.row.justify-content-center
+						.col-12.col-xl-9.col-xxl-12
+							.row.row-15.row-md-30.gutters-10.gutters-md-30
+								.col-6.col-lg-4
+									.tilter
+										a.figure-classic( href='faces.html' )
+											+img( 'work-1-400x292' )
+											.figure-classic-inner
+												.title Faces
+												.subtitle 123 photos
+								.col-6.col-lg-4
+									.tilter
+										a.figure-classic( href='fashion.html' )
+											+img( 'work-2-400x292' )
+											.figure-classic-inner
+												.title FASHION
+												.subtitle 123 photos
+								.col-6.col-lg-4
+									.tilter
+										a.figure-classic( href='wedding.html' )
+											+img( 'work-3-400x292' )
+											.figure-classic-inner
+												.title wedding
+												.subtitle 123 photos
+								.col-6.col-lg-4
+									.tilter
+										a.figure-classic( href='children.html' )
+											+img( 'work-4-400x292' )
+											.figure-classic-inner
+												.title children
+												.subtitle 123 photos
+								.col-6.col-lg-4
+									.tilter
+										a.figure-classic( href='love-story.html' )
+											+img( 'work-5-400x292' )
+											.figure-classic-inner
+												.title love story
+												.subtitle 123 photos
+								.col-6.col-lg-4
+									.tilter
+										a.figure-classic( href='motion.html' )
+											+img( 'work-6-400x292' )
+											.figure-classic-inner
+												.title motion
+												.subtitle 123 photos
+
+		section.section.section-fullpage.section-md.bg-gray-100.fp-auto-height-responsive#section-3( data-anchor='about' )
+			h6.section-fullpage-title about
+			.section-fullpage-inner
+				.container
+					.row.justify-content-center
+						.col-lg-8.col-xl-7
+							h3.text-center Lila Dusk
+							.big.px-2.text-justify
+								p I specialize in lifestyle and travel photography. I not only shoot in and around the streets of the city, but also in apartments, shops, parks – anywhere and everywhere my clients FEEL happy. Finding places that make people feel happy, as well as creating memories while we shoot. And that is what makes great photos!
+								p My work in photography is a natural extension of my desire to tell stories. I’ve always been a nostalgic and romantic person, and I love that my work allows me to express those traits in such a meaningful way.
+			.parallax-scene
+				.parallax-scene-item.parallax-scene-item-4: .layer( data-depth='.2' ): +img( 'home-4-281x205' ).tilter
+				.parallax-scene-item.parallax-scene-item-6: .layer( data-depth='-.36' ): +img( 'home-6-429x313' ).tilter
+				.parallax-scene-item.parallax-scene-item-5: .layer( data-depth='.2' ): +img( 'home-5-344x251' ).tilter
+		section.section.section-fullpage.section-md.bg-gray-100.fp-auto-height-responsive#section-4( data-anchor='exhibitions' )
+			h6.section-fullpage-title exhibitions
+			.section-fullpage-inner
+				.container.text-center.text-xl-left
+					.row.justify-content-center
+						.col-lg-9.col-xl-7
+							.row.row-30.row-xxl-50
+								.col-sm-6
+									h4 New York
+									p.big.font-weight-bold Emotional sense of photography
+									p The Photographers’ Gallery
+										br 
+										| 9 May – 25 Aug 2021
+								.col-sm-6
+									h4 milan
+									p.big.font-weight-bold The Moment in Space
+									p The Photographers’ Gallery
+										br
+										| 27 Jun – 15 Sep 2021
+								.col-sm-6
+									h4 Valencia
+									p.big.font-weight-bold Contemporary Art
+									p The Photographers’ Gallery
+										br
+										| 1 Jun – 25 Aug 2021
+								.col-sm-6
+									h4 Berlin
+									p.big.font-weight-bold The Future is Now 
+									p The Photographers’ Gallery
+										br
+										| 7 Jun – 10 Nov 2021
+								.col-sm-6
+									h4 Paris
+									p.big.font-weight-bold The love you share
+									p The Photographers’ Gallery
+										br
+										| 9 May – 25 Aug 2021
+								.col-sm-6
+									h4 Amsterdam
+									p.big.font-weight-bold Entounters with the camera
+									p The Photographers’ Gallery
+										br
+										| 5 Jun – 27 Jul 2021
+			.parallax-scene
+				.parallax-scene-item.parallax-scene-item-7: .layer( data-depth='.2' ): +img( 'home-7-416x304' ).tilter
+				.parallax-scene-item.parallax-scene-item-8: .layer( data-depth='-.36' ): +img( 'home-8-384x280' ).tilter
+				.parallax-scene-item.parallax-scene-item-11: .layer( data-depth='.2' ): +img( 'home-9-281x205' ).tilter
+		section.section.section-fullpage.section-md.bg-gray-100.fp-auto-height-responsive#section-5( data-anchor='contacts' )
+			h6.section-fullpage-title contacts
+			.section-fullpage-inner
+				.container.text-center
+					.row.justify-content-center
+						.col-lg-9.col-xl-7
+							p.big Tell me about your story, your passion, your love.
+								br
+								| And I'll be happy to get back to you and talk about our common project. Let's connect here.
+							h3.text-spacing-21: a( href='tel:#' ) +1 256 10 87 000
+							h5.mt-2.font-weight-light 4401 Waldeck Street Grapevine, Nashville, TX 76051
+							a.mail-link( href='mailto:#' ) info@demolink.org
+			.parallax-scene
+				.parallax-scene-item.parallax-scene-item-7.d-none.d-lg-block: .layer( data-depth='.2' ): +img( 'home-10-473x345' ).tilter
+				.parallax-scene-item.parallax-scene-item-10: .layer( data-depth='-.36' ): +img( 'home-11-398x290' ).tilter
+				.parallax-scene-item.parallax-scene-item-9: .layer( data-depth='.2' ): +img( 'home-12-252x184' ).tilter
+	include ../sections/_footer-classic
