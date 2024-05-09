@@ -1341,6 +1341,8 @@ a[href*="mailto"] {
 .mobile .figure-classic img,
 .tablet .figure-classic img {
   opacity: 0.5;
+  max-height: 320px;
+  width: auto;
 }
 
 .tilter {
@@ -8797,7 +8799,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 @media (min-width: 1200px) {
   .parallax-scene-item-5 {
     bottom: -3%;
-    right: -20%;
+    right: -17%;
   }
 }
 
@@ -8822,16 +8824,15 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 @media (min-width: 1200px) {
   .parallax-scene-item-6 {
-    width: 300px;
-    bottom: 28%;
-    right: -12%;
+    bottom: 16%;
+    right: -5%;
   }
 }
 
 @media (min-width: 1600px) {
   .parallax-scene-item-6 {
     width: auto;
-    right: -4%;
+    right: -9%;
   }
 }
 
@@ -8849,13 +8850,14 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 @media (min-width: 1200px) {
   .parallax-scene-item-7 {
-    bottom: 2%;
+    bottom: -10%;
   }
 }
 
 @media (min-width: 1600px) {
   .parallax-scene-item-7 {
     left: 8%;
+    bottom: 2%;
     width: auto;
   }
 }
@@ -8942,8 +8944,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 .parallax-scene-item-10 {
   display: none;
-  bottom: -5%;
-  right: -20%;
+  bottom: 7%;
+  right: -10%;
 }
 
 @media (min-width: 992px) {
